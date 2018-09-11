@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Crystals Collector</title>
+    <!-- links to jquery,css and reset-->
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
+
+    <!-- Bootstrap link for the panels-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+
+<body>
+    <!--the title for the game in the jumbotron-->
+    <div class="jumbotron">
+        <h1 class="text-center">Crystals Collector and Match!</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+
+
+            <!--Rules for the game is in the section-->
+            <div class="col-lg-12">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center">How to Play</h3>
+                    </div>
+                    <div class="panel-body">
+                        <ul>
+                            <p>You will be given a random number at the start of the game.
+                            There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
+                            You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.
+                            The value of each crystal is hidden from you until you click on it.
+                            Each time when the game starts, the game will change the values of each crystal.</p>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- the crystals are in this section to play the game and match the number given to possibly win the game -->
+            <div class="col-lg-6">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center">Crystals</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="thumbnail">
+
+                                      <!--the first crystal to push-->
+                                        <img id="blue" src="assets/images/1.jpg" alt="blue">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="thumbnail">
+                                      <!--the second crystal to push-->
+
+                                        <img id="red" src="assets/images/2.jpg" alt="red">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="thumbnail">
+
+                                      <!--the third crystal to push-->
+
+                                        <img id="yellow" src="assets/images/3.jpg" alt="yellow">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="thumbnail">
+
+                                      <!--the third crystal to push-->
+
+                                        <img id="green" src="assets/images/4.jpg" alt="green">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+              <!--The number you have chosen will show up in this section-->
+            <div class="col-lg-2">
+                <div class="panel panel-primary">
+                    <div id=total class="panel-heading">
+                        <h3 class="panel-title text-center">Your Number</h3>
+                    </div>
+                    <div class="panel-body">
+                        <h1 id="totalNum"></h1>
+                    </div>
+                </div>
+            </div>
+
+            <!--The number to get to will show here-->
+            <div class="col-lg-2">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center">Number To Match</h3>
+                    </div>
+                    <div class="panel-body">
+                        <h1 id="Guess"></h1>
+                    </div>
+                </div>
+            </div>
+
+            <!--Your score such as your wins and losses will show up in this section-->
+            <div class="col-lg-2">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center">Score</h3>
+                    </div>
+                    <div class="panel-body">
+                        <h5>Wins: <span id="wins"></span></h5>
+                        <h5>Losses: <span id="losses"></span></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--the Javascript link when go at the bottom because it has to load first on the site-->
+        <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</body>
+
+</html>

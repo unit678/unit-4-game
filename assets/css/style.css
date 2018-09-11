@@ -1,0 +1,16 @@
+
+.jumbotron {
+  margin-bottom: 0px;
+  background-color: grey;
+}
+
+body {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    background-color: grey;
+}
+
+.text-center{
+
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-style: italic;
+}
