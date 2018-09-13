@@ -16,140 +16,135 @@
 </head>
 
 <body>
-
-<div class="container" id="main">
+<!--THE Header of the projectinside this section-->
+<div class="container" id="mainContainer">
 
     <div class="container" id="headcontainer">
-    <div class="row">
-      <div class="col-lg-4">
-        <div class="card">
-        <div class="card-body" id="headerfontcontrol">
-          <h3>Crystals Collectors!</h3>
-        </div>
-      </div>
-</div>
-</div>
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="card">
+                  <div class="card-body" id="header">
+                    <h3>Crystals Collectors!</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
 </div>
 
-<div class="container" id="middlecontentcontainer">
+
+<!--The content of the reles are place inside this div-->
+<div class="container" id="middleArea">
   <div class="row">
     <div class="col-lg-6">
       <div class="card">
-      <div class="card-body" id="instructionfontcontrol">
-            <p>You will be given a random number at the start of the game.
-            There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
-            You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.
-            The value of each crystal is hidden from you until you click on it.
-            Each time when the game starts, the game will change the values of each crystal.</p>
-          </div>
+          <div class="card-body" id="instructions">
+                <p>You will be given a random number at the start of the game.
+                There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
+                You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.
+                The value of each crystal is hidden from you until you click on it.
+                Each time when the game starts, the game will change the values of each crystal.</p>
+            </div>
         </div>
       </div>
     </div>
 </div>
 
-
-<div class="container" id="numbercontainer">
+<!--the ramdom number that is chosen is in this section-->
+<div class="container" id="number">
   <div class="row">
     <div class="col-lg-3">
       <div class="card">
-      <div class="card-body" id="randomfontcontrol">
-        <p id = "numGuess"> </p>
+        <div class="card-body" id="random">
+          <p id = "numberGuess"> </p>
+        </div>
       </div>
-      </div>
-      </div>
+    </div>
 
 
-
+<!--wins and losses are shown in this card-->
       <div class="col-lg-2" id="scoreboard">
         <div class="card">
-        <div class="card-body" id="scorebofontcontrol">
-          <p>Wins: <span id="wins"></span></p>
-          <p>Losses: <span id="losses"></span></p>
+          <div class="card-body" id="scores">
+            <p>Wins: <span id="wins"></span></p>
+            <p>Losses: <span id="losses"></span></p>
+          </div>
         </div>
-        </div>
-        </div>
-        </div>
-        </div>
+      </div>
+    </div>
+  </div>
 
-        <div class = "container" id = "crystalcontainer">
+<!-- the begginning of the crystals are shown here-->
+        <div class = "container" id = "crystalsArea">
           <div class="row">
             <div class="col-lg-2">
               <div class="card">
                 <div class="card-body">
                   <img id="blue" src="assets/images/1.jpg" alt= "blue" style="width:100px;">
                 </div>
+              </div>
+            </div>
+
+<!--Crystals-->
+        <div class="col-lg-2">
+          <div class="card">
+            <div class="card-body">
+              <img id="red" src="assets/images/2.jpg" alt= "red" style="width:100px;">
+            </div>
+          </div>
+        </div>
+
+        <!--Crystals-->
+
+          <div class="col-lg-2">
+            <div class="card">
+              <div class="card-body">
+                <img id="yellow" src="assets/images/3.jpg" alt= "yellow" style="width:100px;">
+              </div>
+            </div>
+          </div>
+
+          <!--Crystals-->
+
+            <div class="col-lg-2">
+              <div class="card">
+                <div class="card-body">
+                  <img id="green" src="assets/images/4.jpg" alt= "green" style="width:100px;">
                 </div>
-                </div>
-
-
-                <div class="col-lg-2">
-                  <div class="card">
-                    <div class="card-body">
-                      <img id="red" src="assets/images/2.jpg" alt= "red" style="width:100px;">
-                    </div>
-                    </div>
-                    </div>
-
-
-                    <div class="col-lg-2">
-                      <div class="card">
-                        <div class="card-body">
-                          <img id="yellow" src="assets/images/3.jpg" alt= "yellow" style="width:100px;">
-                        </div>
-                        </div>
-                        </div>
-
-
-                        <div class="col-lg-2">
-                          <div class="card">
-                            <div class="card-body">
-                              <img id="green" src="assets/images/4.jpg" alt= "green" style="width:100px;">
-                            </div>
-                            </div>
-                            </div>
-                            </div>
-                            </div>
-
-        <div class="container" id= "scorecontentcontainer">
+              </div>
+            </div>
+          </div>
+        </div>
+<!--the beginning of the card that shows the score-->
+        <div class="container" id= "content">
           <div class="row">
             <div class="col-lg-3">
               <div class = "card">
-                <div class="card-body" id = "totalfontcontrol">
+                <div class="card-body" id = "font">
                     <p>Total Score:</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container" id= "forScore">
+          <div class="row">
+            <div class="col-lg-3">
+              <div class = "card">
+                <div class="card-body" id = "font">
+                  <p><span id= "myScore"></span></p>
                   </div>
-                  </div>
-                  </div>
-                  </div>
-                  </div>
-
-                  <div class="container" id= "scorecontainer">
-                    <div class="row">
-                      <div class="col-lg-3">
-                        <div class = "card">
-                          <div class="card-body" id = "totalfontcontrol">
-                            <p><span id= "yourScore"></span></p>
-                          </div>
-                            </div>
-                            </div>
-                            </div>
-                            </div>
-                          </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-        <script src="https://code.jquery.com/jquery.js"></script>
         <!--the Javascript link when go at the bottom because it has to load first on the site-->
-        <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery.js"></script>
+<script type="text/javascript" src="assets/javascript/game.js"></script>
 
 </body>
 

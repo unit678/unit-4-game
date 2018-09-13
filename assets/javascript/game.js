@@ -3,33 +3,33 @@
 var randomNumber = 18 + Math.floor(Math.random() * 120);
 
 //this id link will allow the number to show
-$('#numGuess').html(randomNumber);
+$('#numberGuess').html(randomNumber);
 console.log(randomNumber);
 //the computer selects a number between 1 and all the variables for the game.
 var blueCrystal = 1 + Math.floor(Math.random() * 10);
 var redCrystal = 1 + Math.floor(Math.random() * 10);
 var yellowCrystal = 1 + Math.floor(Math.random() * 10);
 var greenCrystal = 1 + Math.floor(Math.random() * 10);
-
-var scoreTracker = 0;
 var wins = 0;
 var losses = 0;
-$('#yourScore').text(scoreTracker);
+var score = 0;
+
+$('#myScore').text(score);
 $('#wins').text(wins);
 $('#losses').text(losses);
 
 //reset everything once you have won the game or loss
 
 var reset = function () {
-  scoreTracker = 0;
+  score = 0;
   randomNumber = 18 + Math.floor(Math.random() * 120);
   blueCrystal = 1 + Math.floor(Math.random() * 10);
   redCrystal = 1 + Math.floor(Math.random() * 10);
   yellowCrystal = 1 + Math.floor(Math.random() * 10);
   greenCrystal = 1 + Math.floor(Math.random() * 10);
   console.log(randomNumber);
-  $('#numGuess').text(randomNumber);
-  $('#yourScore').text(scoreTracker);
+  $('#numberGuess').text(randomNumber);
+  $('#myScore').text(score);
   $('#wins').text(wins);
   $('#losses').text(losses);
 };
@@ -37,11 +37,11 @@ var reset = function () {
 
 //the rules of the game when you are playing with the if and else statments.
 var rules = function () {
-  if (scoreTracker == randomNumber) {
+  if (score == randomNumber) {
     wins++;
     $('#wins').text(wins);
     reset();
-  } else if (scoreTracker > randomNumber) {
+  } else if (score > randomNumber) {
     losses++;
     $('#losses').text(losses);
     reset();
@@ -51,30 +51,30 @@ var rules = function () {
 //all the crystals are here when they are pressed giving the random number.
 
 $('#blue').on('click', function () {
-  scoreTracker = scoreTracker + blueCrystal;
-  console.log(scoreTracker);
-  $('#yourScore').text(scoreTracker);
+  score = score + blueCrystal;
+  console.log(score);
+  $('#myScore').text(score);
   rules();
 });
 
 $('#red').on('click', function () {
-  scoreTracker = scoreTracker + redCrystal;
-  console.log(scoreTracker);
-  $('#yourScore').text(scoreTracker);
+  score = score + redCrystal;
+  console.log(score);
+  $('#myScore').text(score);
   rules();
 });
 
 $('#yellow').on('click', function () {
-  scoreTracker = scoreTracker + yellowCrystal;
-  console.log(scoreTracker);
-  $('#yourScore').text(scoreTracker);
+  score = score + yellowCrystal;
+  console.log(score);
+  $('#myScore').text(score);
   rules();
 });
 
 $('#green').on('click', function () {
-  scoreTracker = scoreTracker + greenCrystal;
-  console.log(scoreTracker);
-  $('#yourScore').text(scoreTracker);
+  score = score + greenCrystal;
+  console.log(score);
+  $('#myScore').text(score);
   rules();
 });
 
